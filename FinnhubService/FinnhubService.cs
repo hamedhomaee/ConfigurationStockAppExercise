@@ -10,7 +10,7 @@ public class FinnhubService : IFinnhubService
 
     public FinnhubService(string token)
     {
-        token = _token!;
+        _token = token;
     }
 
     public async Task<Dictionary<string, object>?> GetCompanyProfileAsync(string stockSymbol)

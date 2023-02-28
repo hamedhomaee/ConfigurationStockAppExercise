@@ -29,8 +29,8 @@ public class TradeController : Controller
         StockTrade model = new()
         {
             StockSymbol = _options.DefaultStockSymbol,
-            StockName = Convert.ToString(companyProfile!["name"]),
-            Price = Convert.ToDouble(priceQuote!["c"]),
+            StockName = companyProfile!["name"].ToString(),
+            Price = Convert.ToDouble((priceQuote!["c"].ToString())),
             Quantity = 100
         };
 

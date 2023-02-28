@@ -1,11 +1,9 @@
 @model StockTrade
 
 <div class="container">
-    <div>
-        <ul class="symbol-container">
-            <li>@Model.StockName</li>
-            <li>@Model.StockSymbol</li>
-        </ul>
-    </div>
-    <div>&dollar; @Model.Price</div>
+    <ul class="symbol-container">
+        <li>@Model.StockName</li>
+        <li>@Model.StockSymbol</li>
+    </ul>
+    <div class="price">&dollar; @Model.Price</div>
 </div>
